@@ -1,0 +1,100 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Logo */
+.medical-emoji {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Chat Container */
+.chat-container {
+    max-width: 800px;  /* Increase width */
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+textarea:focus {
+    border-color: #1e7e34;
+    box-shadow: 0px 0px 10px rgba(30, 126, 52, 0.5);
+    outline: none;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    background: #1e7e34;  /* Bootstrap Dark Green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #155724;  /* Darker Green */
+    color: white;
+    transform: scale(1.02);  /* Slightly bigger */
+    box-shadow: 0px 0px 15px rgba(21, 87, 36, 0.8); /* Green glow effect */
+}
+
+
+/* Response Styling */
+.response-box {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    background: #f8f9fa;
+    border-left: 5px solid #1e7e34;
+    border-radius: 5px;
+    text-align: left;
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Spinner */
+.loading-spinner {
+    display: none;
+    margin: 10px auto;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #fff;
+    border-top: 4px solid #1e7e34;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
